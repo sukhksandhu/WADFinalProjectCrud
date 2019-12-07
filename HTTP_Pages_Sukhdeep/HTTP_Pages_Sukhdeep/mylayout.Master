@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="mylayout.master.cs" Inherits="HTTP_Pages_Sukhdeep.mylayout" %>
+<%@ Register Src="~/pagecontroller.ascx" TagName="PageController" TagPrefix="asp"%>
+
+
+<!DOCTYPE html>
+<%--I made my own master file And this one is integrated to all my pages
+. This is linked to pages_styles.css--%>
+<html>
+<head runat="server">
+    <title>Pages 
+    </title>
+    <link href="pages_styles.css" rel="stylesheet" />
+    
+</head>
+<body>
+    <%--my header goes here --%>
+    <header>
+        <div class="cwidth">
+            <nav>
+                <ul class="main-menu">
+                   <%-- here I am using my code snippet which is described in pagecontroller.ascx file--%> 
+                   <asp:pagecontroller runat="server"></asp:pagecontroller>
+                </ul>
+            </nav>
+            
+           
+        </div>
+    </header>
+    <div class="cwidth">
+        <form id="form1" runat="server">
+            <asp:ContentPlaceHolder ID="body" runat="server">
+                 
+            </asp:ContentPlaceHolder>
+        </form>
+        
+    </div>
+  <%-- this is my footer----%>
+    <footer>
+        <div class="cwidth">
+             Copyright@Sukhdeep
+            
+        </div>
+    </footer>
+</body>
+</html>

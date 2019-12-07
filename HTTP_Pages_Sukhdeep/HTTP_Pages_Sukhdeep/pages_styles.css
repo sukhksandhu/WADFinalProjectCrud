@@ -1,0 +1,132 @@
+﻿
+/*GENERAL CSS*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.cwidth {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding-bottom:20px;
+}
+/*STYLING FOR HEADER*/
+header {
+    margin-bottom: 10px;
+    background:tan;
+    height: 112px;
+    color: black;
+    font-size: 16px;
+}
+#navheading {
+    font-size: 20px;
+    color:black;
+}
+/*FOOTER STYLING*/
+footer {
+    margin-top: 150px;
+    background: tan;
+    padding: 30px 0;
+}
+
+
+header nav {
+    padding-top: 40px;
+    
+}
+/*TO GET RID OF BULLET LISTS*/
+header nav ul {
+list-style-type: none;
+}
+/*TO DISPLAY LIST POINTS IN ONE LINE*/
+header nav ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+/*THIS BUTTON ALLOWS TO GO BACK TO LIST PAGES WHICH IS MAIN OPENING PAGE*/
+#backbutton{
+    margin-top:5px;
+}
+
+
+/*STYLING FOR LINKS OF PAGES TITLES IN HEADER */
+nav li a, nav li a:active, nav li a:hover, nav li a:visited {
+    text-decoration: none;
+    color: firebrick;
+    font-weight: bold;
+}
+/*STYLING FOR BODY FIELD OF HTTP PAGES */
+#body_page_body {
+    margin-top: 10px;
+    width: 50%;
+    height: 200px;
+    
+   
+}
+
+
+
+.listitem {
+    background: #fefefe;
+    padding: 12px 5%;
+    width: 90%;
+    overflow: hidden;
+}
+
+.listitem:after {
+    clear: both;
+}
+/*TABLE COLOR AND BORDER DEFINED HERE */
+    .listitem:nth-child(n) {
+        background: #ddae58cf;
+        border:solid 1px #402610;
+    }
+
+.listitem:hover {
+    background:#311f0f;
+    color:white;
+}
+
+/*I AM USING THREE COLUMN LAYOUT FOR TABLE*/
+
+.col3 {
+    width: 29.41%;
+    float: left;
+    margin-right: 5.88%;
+}
+
+.col3last {
+    width: 29.41%;
+    float: left;
+    margin-right: 0;
+}
+
+
+.titlebox {
+   
+    width: auto;
+   text-align:center;
+   font-weight:bold;
+   font-size:20px;
+}
+
+.viewnav {
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+    .viewnav:after {
+        clear: both;
+    }
+
+    .viewnav .left {
+        float: left;
+    }
+
+    .viewnav .right {
+        float: right;
+    }
+
+
